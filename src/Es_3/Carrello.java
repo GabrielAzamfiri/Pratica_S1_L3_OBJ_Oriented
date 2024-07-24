@@ -1,16 +1,24 @@
 package Es_3;
 
 
+import java.util.ArrayList;
+
 public class Carrello {
     private long clienteAssociato;
-    private Articolo[] elencoArticoli;
+    private ArrayList<Articolo> elencoArticoli;
     private int totaleCostoArticoli;
 
 
-    public Carrello(long clienteAssociato, Articolo[] elencoArticoli, int totaleCostoArticoli) {
+    public Carrello(long clienteAssociato) {
         this.clienteAssociato = clienteAssociato;
-        this.elencoArticoli = elencoArticoli;
-        this.totaleCostoArticoli = totaleCostoArticoli;
+        this.elencoArticoli = new ArrayList<>();
+        this.totaleCostoArticoli = 0;
+    }
+
+
+    public void addArticle(Articolo newArticolo) {
+        elencoArticoli.add(newArticolo);
+        totaleCostoArticoli += newArticolo.getPrezzoArticolo();
 
 
     }
@@ -19,7 +27,7 @@ public class Carrello {
         return clienteAssociato;
     }
 
-    public Articolo[] getElencoArticoli() {
+    public ArrayList<Articolo> getElencoArticoli() {
         return elencoArticoli;
     }
 

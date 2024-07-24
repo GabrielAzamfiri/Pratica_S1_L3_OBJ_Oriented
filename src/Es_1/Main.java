@@ -1,5 +1,7 @@
 package Es_1;
 
+import static Es_1.Rettangolo.stampaDueRettangoli;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class Main {
         System.out.println("Il Perimetro del primo Rettangolo è: " + primoRettangolo.getPerimetro() + " mentre l'area è: " + primoRettangolo.getArea());
         Rettangolo secondoRettangolo = new Rettangolo(15, 20);
         secondoRettangolo.stampaRettangolo();
-        secondoRettangolo.stampaDueRettangoli(primoRettangolo, secondoRettangolo);
+        stampaDueRettangoli(primoRettangolo, secondoRettangolo);
 
     }
 }
