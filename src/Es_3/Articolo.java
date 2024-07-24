@@ -30,4 +30,14 @@ public class Articolo {
     public int getNumeroPezziDisponibili() {
         return numeroPezziDisponibili;
     }
+
+    @Override
+    public String toString() {
+        return "Articolo{" +
+                "codiceArticolo=" + codiceArticolo +
+                ", descrizioneArticolo='" + descrizioneArticolo + '\'' +
+                ", prezzoArticolo=" + prezzoArticolo +
+                ", numeroPezziDisponibili=" + numeroPezziDisponibili +
+                '}';
+    }
 }

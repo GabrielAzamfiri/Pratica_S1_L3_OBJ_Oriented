@@ -34,4 +34,6 @@ public class Carrello {
     public int getTotaleCostoArticoli() {
         return totaleCostoArticoli;
     }
+
+    
 }
