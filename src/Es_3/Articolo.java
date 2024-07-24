@@ -11,7 +11,7 @@ public class Articolo {
         this.descrizioneArticolo = descrizioneArticolo;
         this.prezzoArticolo = prezzoArticolo;
         this.numeroPezziDisponibili = numeroPezziDisponibili;
-        this.codiceArticolo = Math.round(Math.random());
+        this.codiceArticolo = Math.round(Math.random() * 1000);
 
     }
 
